@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #050a14;
+  --bg-surface: #0a1120;
+  --bg-elevated: #0f1829;
+  --bg-input: #0c1424;
+  --border-subtle: #162035;
+  --border-default: #1c2a42;
+  --border-strong: #263a56;
+  --text-primary: #e2e8f2;
+  --text-secondary: #7088a4;
+  --text-tertiary: #45576e;
+  --accent: #4f8efa;
+  --accent-hover: #6ba0ff;
+  --accent-muted: rgba(79, 142, 250, 0.08);
+  --accent-subtle: rgba(79, 142, 250, 0.15);
+  --success: #34d399;
+  --success-muted: rgba(52, 211, 153, 0.1);
+  --error: #f87171;
+  --error-muted: rgba(248, 113, 113, 0.1);
+  --ring: #4f8efa;
+}
+
+@theme inline {
+  --color-background: var(--bg-base);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent-subtle);
+  color: var(--text-primary);
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* Turnstile widget override */
+.cf-turnstile iframe {
+  border-radius: 8px;
+}
+
+/* Pulse keyframe for loading states */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 2s ease-in-out infinite;
+}
