@@ -24,7 +24,7 @@
     "sonner": "^1.4.0",
     "tailwind-merge": "^2.2.0",
     "zod": "^3.23.0",
-    "@itszaaarrr/pq-ethers": "^6.13.5"
+    "pq-ethersjs": "^6.13.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

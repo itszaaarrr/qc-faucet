@@ -1,4 +1,4 @@
-import { ethers } from '@itszaaarrr/pq-ethers';
+import { ethers } from 'pq-ethersjs';
 
 /**
  * Sends a faucet transaction (native token transfer)
