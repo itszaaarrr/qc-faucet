@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@armchain-ethersv6/ethers": "^6.13.5",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
     "class-variance-authority": "^0.7.0",
@@ -24,7 +23,8 @@
     "react-turnstile": "^1.1.0",
     "sonner": "^1.4.0",
     "tailwind-merge": "^2.2.0",
-    "zod": "^3.23.0"
+    "zod": "^3.23.0",
+    "@itszaaarrr/pq-ethers": "^6.13.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

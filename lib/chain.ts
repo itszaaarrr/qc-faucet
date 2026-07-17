@@ -1,4 +1,4 @@
-import { ethers } from '@armchain-ethersv6/ethers';
+import { ethers } from '@itszaaarrr/pq-ethers';
 
 /**
  * Sends a faucet transaction (native token transfer)
